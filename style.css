@@ -1,0 +1,26 @@
+body {
+	display: grid;
+	grid-template-columns: repeat(1fr, auto-fit);
+	width: 90vw;
+	height: 100vh;
+	margin: 0;
+}
+
+.nav-container {
+	display: grid;
+	grid-template-columns: repeat(1fr, 3);
+	grid-template-rows: auto;
+	background-color: gray;
+	justify-content: space-between;
+	width: 100vw;
+	height: 10vh;
+}
+
+.nav-item {
+	width: 10vw;
+	height: 2vh;
+}
+
+#faceLogo {
+	justify-self: start;
+}
