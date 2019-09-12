@@ -1,6 +1,6 @@
 body {
 	display: grid;
-	grid-template-columns: repeat(1fr, auto-fit);
+	grid-template-columns: repeat(3, 1fr);
 	width: 90vw;
 	height: 100vh;
 	margin: 0;
@@ -8,17 +8,19 @@ body {
 
 .nav-container {
 	display: grid;
-	grid-template-columns: repeat(1fr, 3);
-	grid-template-rows: auto;
+	grid-template-columns: repeat(3, 1fr);
 	background-color: gray;
-	justify-content: space-between;
+	justify-content: center;
 	width: 100vw;
-	height: 10vh;
+	height: 15vh;
 }
 
-.nav-item {
-	width: 10vw;
-	height: 2vh;
+.nav-container ul {
+	list-style: none;
+}
+
+.nav-container ul .nav-item {
+	align-self: center;
 }
 
 #faceLogo {
