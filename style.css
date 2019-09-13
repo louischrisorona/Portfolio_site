@@ -1,28 +1,27 @@
 body {
+	font-family: 'Arial Narrow', Roboto, 'Times New Roman';
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	width: 90vw;
-	height: 100vh;
+	grid-template-columns: 1fr;
+	grid-gap: 10px;
 	margin: 0;
+	width: 100vw;
 }
 
 .nav-container {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
 	background-color: gray;
-	justify-content: center;
-	width: 100vw;
 	height: 15vh;
 }
 
 .nav-container ul {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	text-align: center;
 	list-style: none;
 }
 
-.nav-container ul .nav-item {
-	align-self: center;
-}
-
-#faceLogo {
-	justify-self: start;
+.nav-item a{
+	font-size: 20px;
+	text-decoration: none;
+	color: darkgreen;
+	text-transform: uppercase;
 }
